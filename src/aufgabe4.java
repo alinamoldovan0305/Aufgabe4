@@ -51,11 +51,8 @@ public class aufgabe4 {
         }
 
     }
-    //Finden Sie, anhand Markus’ Budget und der Preislisten für die Tastaturen und
-    //USB- Laufwerke, den maximalen Geldbetrag, der von Markus ausgegeben wird. Wenn
-    //er nicht genug für beide hat, geben Sie stattdessen  -1 zurück. Er kauft nur die zwei
-    //benötigten Gegenstände.
 
+    //maximalen Geldbetrag
     public static int maximaleGeldbetrag(int [] tastatur, int [] USB, int budget){
         int max=-1;
         for(int i=0;i<tastatur.length;i++){
