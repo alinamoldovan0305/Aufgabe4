@@ -25,4 +25,29 @@ public class aufgabe4 {
         return max;
     }
 
+    //Schreiben Sie eine Methode, welche das teuerste USB Laufwerk, das Markus kaufen
+    //kann, zurückgibt
+    public static int USBmitBudget(int [] USB, int budget){
+        int [] leistbar= new int[USB.length];
+        int index=0;
+        for(int i=0;i<USB.length;i++){
+            if(USB[i]<=budget){
+                leistbar[index]=USB[i];
+                index++;
+            }
+        }
+        if(index==0){
+            System.err.println("Unzureichendes Budget");
+            return -1;
+        }
+        else {
+            int max = leistbar[0];
+            for (int i = 0; i < leistbar.length; i++) {
+                if (leistbar[i] > max) {
+                    max = leistbar[i];
+                }
+            }
+            return max;
+        }
     }
+}
