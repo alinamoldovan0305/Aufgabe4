@@ -11,5 +11,18 @@ public class aufgabe4 {
         }
         return min;
     }
+    //Schreiben Sie eine Methode, welche den teuersten Gegenstand zurückgibt.
+    public static int teuerstenGegenstand(int [] tastatur, int [] USB){
+        int max=tastatur[0];
+        for(int i=0;i<tastatur.length;i++){
+        if(tastatur[i]>max)
+            max=tastatur[i];
+        }
+        for(int i=0;i<USB.length;i++){
+            if(USB[i]>max)
+                max=USB[i];
+        }
+        return max;
+    }
 
-}
+    }
